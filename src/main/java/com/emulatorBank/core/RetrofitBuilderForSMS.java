@@ -1,10 +1,9 @@
 package com.emulatorBank.core;
 
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-public class RetrofitBuilder {
+public class RetrofitBuilderForSMS {
 
     private static Retrofit INSTANCE;
 
@@ -13,13 +12,13 @@ public class RetrofitBuilder {
             synchronized (Retrofit.class) {
                 if (INSTANCE == null) {
                     INSTANCE = new Retrofit.Builder()
-                            //.baseUrl("http://90.188.7.43:8080/")
                             .baseUrl(urladdress)
-                            .addConverterFactory(GsonConverterFactory.create())
+                            .addConverterFactory(ScalarsConverterFactory.create())
                             .build();
                 }
             }
         }
         return INSTANCE;
     }
+
 }

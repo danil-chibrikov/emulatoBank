@@ -7,8 +7,9 @@
 <body>
 
 <div class="form-style-2">
-    <div class="form-style-2-heading">Форма отправки уведомления клиенту</div>
+    <div class="form-style-2-heading">Эмулятор автоматизированной системы банка для отправки уведомления</div>
     <form method="post">
+        <label><span>URL-адрес поставщика</span><input type="text" name="urladdress" class="input-field" value="http://"/></label>
         <label><span>Номер телефона</span><input maxlength=12 type="text" name="phone" class="input-field" value="+7"/></label>
         <label><span>Сообщение</span><textarea type="text" name="notif" class="textarea-field"></textarea></label>
         <label><span>&nbsp;</span><input type="submit" value="Отправить" /></label>

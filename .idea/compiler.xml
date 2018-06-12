@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="emulatoBank" />
         <module name="emulatorBank" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="emulatoBank" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
